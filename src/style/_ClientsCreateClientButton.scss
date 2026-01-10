@@ -1,0 +1,34 @@
+.top-clientes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    font-weight: bold;
+}
+
+.clienteButton {
+     display: flex;
+
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    border: none;
+
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.651);
+    padding: 5px;
+    font-family: sans-serif;
+
+    border-radius: 15px;
+    width: 250px;
+    height: 60px;
+
+    background-color: #3b82f6;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.2);
+    color: white;
+    
+    cursor: pointer;
+ }
+ 

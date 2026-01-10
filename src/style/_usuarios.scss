@@ -1,0 +1,31 @@
+.usuariosCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 9pt;
+    row-gap: 20px;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+
+    .check{
+        
+    }
+
+    .info-user{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        
+        img{
+            border-radius: 50%;
+            border: solid 2px #b1ccf8;
+        }
+    }
+
+}

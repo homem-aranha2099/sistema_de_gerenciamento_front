@@ -1,0 +1,130 @@
+.caixa-avo{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+    color: rgb(0, 4, 29);
+    padding: 20px;
+
+    font-weight: bold;
+
+
+
+    .caixa-pai{
+        box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        padding: 20px;
+        margin: 10px;
+        background-color: white;
+
+        column-gap: 10px;
+
+
+        .caixa-1{
+            display: flex;
+            justify-content: space-between;
+
+
+            div > .descricao{
+                color: rgba(0, 0, 0, 0.37);
+                max-width: 90%;
+                text-align: justify;
+            }
+
+            .icons{
+                width: 7%;
+                display: flex;
+                gap: 10px;
+            }
+        }
+
+        .caixa-2{
+            display: flex;
+            justify-content:start;
+            width: 95%;
+            max-width: 100%;
+            margin-top: 20px;
+            gap: 10px;
+
+            .info{
+                padding: 10px;
+                border-radius: 10px;
+                color: rgba(0, 0, 0, 0.842);
+                background-color: #f3f3f3;
+
+            }
+
+            .alta{
+                background-color: #f47777;
+                color:rgba(255, 255, 255, 0.842);
+            }
+
+            .media{
+                background-color: #f9c560;
+                color:rgba(255, 255, 255, 0.842)
+            }
+
+            .baixa{
+                background-color: #69d7af;
+                color:rgba(255, 255, 255, 0.842)
+            }
+
+            
+
+            .data{
+                background-color: #fee2e2;
+            }
+        }
+
+        .conclusao{
+            background-color: #35af70;
+            padding: 10px;
+            align-items: center;
+            border-radius: 10px;
+            color: rgba(255, 255, 255, 0.842);
+
+            margin-top: 10px;
+            text-align: center;
+        }
+    }
+
+}
+
+.apagar{
+    cursor: pointer;
+    background-color: #f47777;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.842);
+    border: solid 4px #f47777;
+
+}
+
+.editar{
+    cursor: pointer;
+    background-color: #77a9f9;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.842);
+    border: solid 4px #77a9f9;
+}
+
+@media (max-width: 768px) {
+    .caixa-avo{
+        .caixa-pai{
+            .caixa-1{
+                .icons{
+                    width: 20%;
+                }
+            }
+
+            .caixa-2{
+                width: 100%;
+                flex-wrap: wrap;
+
+                gap: 10px;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+
+

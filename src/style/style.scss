@@ -1,0 +1,78 @@
+/*
+ * Copyright (c) 2026 Cauã Fialho
+ * All Rights Reserved.
+ */
+
+@import './Nav';
+@import './Resumo';
+@import './ResumoDia';
+@import './ResumoSemanal';
+@import './TaskPageCalendar';
+@import './TaskPageResumo';
+@import './TaskPageAddTaskButton';
+@import './TaskPageTasks';
+@import './CreatePage';
+@import './ClientesCard';
+@import './ClientsCreateClientButton';
+@import './Usuarios';
+@import './LoginAndRegister';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    scrollbar-gutter: stable;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inter, sans-serif;
+    
+    background-color: rgb(235, 235, 235);
+
+    max-width: 100svw;
+    max-height: 100svh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+main{
+    padding-inline: 7%; 
+
+}
+
+.titleAndBell{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}   
+
+.bell{
+    font-size: 20pt;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;  
+    
+}
+
+@media (max-width: 768px) {
+    main{
+        padding-inline: 2%;
+    }
+}
+
+.none{
+    display: none;
+}

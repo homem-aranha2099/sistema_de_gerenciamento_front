@@ -1,0 +1,117 @@
+.mainClientes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.clientesCard-pai{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.clienteCard{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: space-around;
+
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 9pt;
+    row-gap: 20px;
+
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+
+    .clientes-tarefas-pai{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .pendentes-concluidas{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: space-between;
+        align-items: center;
+
+        .tarefa-cp{
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            justify-content: center;
+            align-items: start;
+
+            background-color: aqua;
+            width: 47%;
+            padding: 10px;
+            border-radius: 10px;
+
+            h1{
+                font-size: 2rem;
+            }
+        }
+
+        .pendentes{
+            background-color: #fef3c7;
+        }
+        .concluidas{
+            background-color: #d1fae5;
+        }
+    }
+}
+
+.buttons{
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    .trash{
+        cursor: pointer;
+        background-color: #f47777;
+        border-radius: 5px;
+        color: rgba(255, 255, 255, 0.842);
+        border: solid 4px #f47777;
+    }
+
+
+
+    .check{
+        cursor: pointer;
+        border-radius: 5px;
+        color: rgba(255, 255, 255, 0.842);
+        border: solid 1px #35af70;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .clientesCard-pai{
+        gap: 10px;
+    }
+    .clienteCard{
+        width: 100%;
+
+        .clientes-tarefas-pai{
+            align-items: start;
+        }
+
+        .pendentes-concluidas{
+            .tarefa-cp{
+                width: 100%;
+            }
+        }
+    }
+}

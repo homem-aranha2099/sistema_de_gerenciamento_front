@@ -1,0 +1,243 @@
+.createPage {
+    display: none;
+    position: fixed;
+
+    top: 0;
+
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+
+    justify-content: center;
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    form {
+        display: flex;
+        width: 50%;
+        height: 95%;
+        padding: 20px;
+        background-color: white;
+        border-radius: 20px;
+
+        overflow-y: auto;
+    }
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    width: 100%;
+
+    .datas {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+
+    }
+
+
+
+    .datas>div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 45%;
+
+
+    }
+
+    .recebido {
+        padding: 10px;
+        border-radius: 10px;
+        border: solid 2px #e0e0e0;
+        background-color: #f1f5f9;
+        color: black;
+        transition: all 0.2s ease-in-out;
+    }
+
+    
+    .voltar-link{
+        color: white;
+        text-decoration: none;
+        background-color: #f47777;
+        border: #f7bbbb;
+        padding: 10px;
+        font-size: 13px;
+        border-radius: 10px;
+        transition: all 0.2s ease-in-out;
+        text-align: center;
+    }
+
+    .recebido:focus{
+        outline: none;
+        border: 2px solid #3b82f6;
+        box-shadow: none;
+    }
+
+
+
+    .entrar{
+        border: solid 1px #bac7f3;
+        background-color: #3b82f6;
+        color: white;
+        width: 100%;
+        cursor: pointer;
+    }
+    
+    .buttons-create-and-back{
+        display: flex;
+        flex-direction: row;
+        gap: 1%;
+    }
+    .voltar{
+        border: solid 1px #f7bbbb;
+        background-color: #f47777;
+        width: 19%;
+        color: white;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        cursor: pointer;
+    }
+
+    .voltar-cadastro{
+        background-color: #ff6262;
+        border: solid 1px #f3baba;
+    }
+
+    .criar{
+        border: solid 1px #baf3bd;
+        background-color: #35af70;
+        color: white;
+        width: 80%;
+
+        cursor: pointer;
+    }
+
+
+
+    .gerar{
+        background-color: #acd0ff;
+        border: solid 1px #b3d4ff;
+        color: rgba(0, 0, 0, 0.692);
+        font-weight: bold;
+        cursor: pointer;
+        color: white;
+        font-size: 16px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 5px;
+
+    }
+
+    .eye{
+        padding: 5px;
+    }
+
+    textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 12px;
+    box-sizing: border-box;
+    resize: vertical;
+    font-family: inherit;
+    border-radius: 8px;
+    }
+
+    .nomes-createClient{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .links{
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
+
+.active{
+    display: none;
+}
+
+.createPage-client{
+    position: fixed;
+    form{
+        width: 40%;
+        height: auto;
+    }
+
+    .senhas-pai{
+
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 10px;;
+
+        justify-content: space-between;
+        align-items: end;
+        
+
+        .senhas{
+
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .senha{
+                width: 100%;
+            }
+
+            .recebido{
+                padding: 10px;
+                border-radius: 10px;
+                border: solid 1px #e0e0e0;
+                background-color: #f1f5f9;
+                color: black;
+
+                width: 100%;
+            }
+
+        }
+
+    }
+
+}
+
+.titulo-login{
+    text-align: center;
+
+}
+
+.subtitulo-login{
+    text-align: center;
+    color: #686868;
+}
+
+@media (max-width: 768px) {
+    .createPage-client{
+        form{
+            width: 95%;
+        }
+    }
+}
+
+.pageCreate-client-pai{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
