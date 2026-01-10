@@ -6,7 +6,7 @@
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: 'http://localhost/arquivos/sistema%20de%20gerenciamento',
+  baseURL: 'http://https://cauafialho.free.nf/',
   withCredentials: true,
   headers: {
     'Content-Type': 'application/json'
