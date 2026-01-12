@@ -3,7 +3,7 @@
  * All Rights Reserved.
  */
 
-import { createBrowserRouter } from 'react-router-dom';
+import { createHashRouter } from 'react-router-dom';
 import App from './App.jsx';
 import Inicio from './Inicio.jsx';
 import TaskPage from './pages/TaskPage.jsx';
@@ -16,7 +16,7 @@ import LoginClient from './conta/LoginClient.jsx';
 
 
 
-const router = createBrowserRouter([
+const router = createHashRouter([
 
   {
     element: <App />,
